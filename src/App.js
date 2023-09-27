@@ -13,7 +13,7 @@ import Notfound from "./pages/404";
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
 
-function App() {
+const App = () => {
 	useEffect(() => {
 		if (TRACKING_ID !== "") {
 			ReactGA.initialize(TRACKING_ID);
@@ -21,7 +21,7 @@ function App() {
 	}, []);
 
 	return (
-		<div className="App">
+		<main className="App">
 			<Routes>
 				<Route path="/" element={<Homepage />} />
 				<Route path="/about" element={<About />} />
@@ -31,8 +31,8 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
-		</div>
+		</main>
 	);
-}
+};
 
 export default App;

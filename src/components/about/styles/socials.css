@@ -8,6 +8,11 @@
 .social a,
 .email-wrapper a {
 	text-decoration: none;
+	opacity: 0.8;
+}
+
+a:hover {
+	opacity: 1;
 }
 
 .social-icon {

@@ -2,6 +2,14 @@
 
 .article {
 	display: flex;
+	padding-left: 12px;
+	border-radius: 20px;
+}
+
+.article:hover {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	opacity: 1;
+	transition: box-shadow 0.3s ease-in-out;
 }
 
 .article a {
@@ -67,3 +75,10 @@
 		max-width: 85%;
 	}
 }
+
+/* @media (max-width: 500px) {
+	.article-title {
+		font-size: 12px;
+		font-weight: 600;
+	}
+} */

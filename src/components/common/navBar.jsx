@@ -8,7 +8,7 @@ const NavBar = (props) => {
 
 	return (
 		<React.Fragment>
-			<div className="nav-container">
+			<section className="nav-container">
 				<nav className="navbar">
 					<div className="nav-background">
 						<ul className="nav-list">
@@ -60,7 +60,7 @@ const NavBar = (props) => {
 						</ul>
 					</div>
 				</nav>
-			</div>
+			</section>
 		</React.Fragment>
 	);
 };
